@@ -10,7 +10,7 @@ public class Motorbike extends Vehicle{
 		
 	}
 
-	public boolean isHasStorage() {
+	public boolean doesHasStorage() {
 		return hasStorage;
 	}
 

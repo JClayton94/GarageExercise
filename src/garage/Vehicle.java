@@ -10,8 +10,6 @@ public class Vehicle {
 	String engine;
 	int topSpeed;
 	
-	
-	
 	public Vehicle(int vehicleID, String vehicleType, int numOfWheels, int numOfDoors, int numOfSeats, String engine, int topSpeed) {
 		
 		this.vehicleType = vehicleType;
