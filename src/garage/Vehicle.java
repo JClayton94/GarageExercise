@@ -1,6 +1,6 @@
 package garage;
 
-public class Vehicle {
+public abstract class Vehicle {
 	
 	int vehicleID;
 	String vehicleType;
@@ -19,6 +19,18 @@ public class Vehicle {
 		this.numOfSeats = numOfSeats;
 		this.engine = engine;
 		this.topSpeed = topSpeed;
+	}
+	public int getVehicleID() {
+		return vehicleID;
+	}
+	public void setVehicleID(int vehicleID) {
+		this.vehicleID = vehicleID;
+	}
+	public String getVehicleType() {
+		return vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
 	}
 	public int getNumOfWheels() {
 		return numOfWheels;

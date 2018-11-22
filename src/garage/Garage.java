@@ -1,14 +1,24 @@
 package garage;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Garage {
 	
-	ArrayList<Vehicle> garage = new ArrayList<Vehicle>();
+	List<Vehicle> garageStore = new ArrayList<Vehicle>();
 	
-	Lorry stobart = new Lorry(1, "Lorry", 6, 2, 2, "V12", 100, 20);
+	public void addToGarage(Vehicle vehicle) {
+		
+		garageStore.add(vehicle);
+		
+	}
 	
-	Car mazda = new Car(2, "Car", 4, 2, 2, "S8", 150, "Convertable");
-
-	Motorbike yamaha = new Motorbike(3, "Motorbike", 2, 0, 1, "300cc", 180, false);
+	public void removeFromGarage(Vehicle v) {
+		
+		garageStore.remove(v);
+		//garageStore = garageStore.stream().filter(id -> id.getVehicleID() != ID).collect(Collectors.toList());
+		
+	}
+	
 }
